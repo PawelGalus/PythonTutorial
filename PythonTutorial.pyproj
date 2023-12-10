@@ -1,0 +1,116 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>f8550d45-dad6-4d95-a774-7246dcbf5cf3</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>Lesson23\server.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>PythonTutorial</Name>
+    <RootNamespace>PythonTutorial</RootNamespace>
+    <IsWindowsApplication>False</IsWindowsApplication>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <CommandLineArguments>
+    </CommandLineArguments>
+    <EnableNativeCodeDebugging>False</EnableNativeCodeDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Lesson01\hello.py" />
+    <Compile Include="Lesson02\welcome.py" />
+    <Compile Include="Lesson03\meaning.py" />
+    <Compile Include="Lesson04\data_types.py" />
+    <Compile Include="Lesson05\rps.py" />
+    <Compile Include="Lesson06\lists.py" />
+    <Compile Include="Lesson07\dictionary.py" />
+    <Compile Include="Lesson08\loops.py" />
+    <Compile Include="Lesson08\rps2.py" />
+    <Compile Include="Lesson09\functions.py" />
+    <Compile Include="Lesson10\example.py" />
+    <Compile Include="Lesson10\recursion.py" />
+    <Compile Include="Lesson10\rps3.py" />
+    <Compile Include="Lesson11\rps4.py" />
+    <Compile Include="Lesson11\scope.py" />
+    <Compile Include="Lesson12\closure.py" />
+    <Compile Include="Lesson12\rps5.py" />
+    <Compile Include="Lesson13\f_strings.py" />
+    <Compile Include="Lesson13\rps6.py" />
+    <Compile Include="Lesson14\kansas.py" />
+    <Compile Include="Lesson14\modules.py" />
+    <Compile Include="Lesson14\rps7.py" />
+    <Compile Include="Lesson15\hello_person.py" />
+    <Compile Include="Lesson15\rps8.py" />
+    <Compile Include="Lesson16\arcade.py" />
+    <Compile Include="Lesson16\guess_number.py" />
+    <Compile Include="Lesson16\rps.py" />
+    <Compile Include="Lesson17\lambda.py" />
+    <Compile Include="Lesson18\classes.py" />
+    <Compile Include="Lesson19\exceptions.py" />
+    <Compile Include="Lesson20\bank_accounts.py" />
+    <Compile Include="Lesson20\opp_project.py" />
+    <Compile Include="Lesson21\weather.py" />
+    <Compile Include="Lesson22\files.py" />
+    <Compile Include="Lesson23\server.py" />
+    <Compile Include="Lesson23\weather.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Lesson01\" />
+    <Folder Include="Lesson02\" />
+    <Folder Include="Lesson03\" />
+    <Folder Include="Lesson04\" />
+    <Folder Include="Lesson05\" />
+    <Folder Include="Lesson06\" />
+    <Folder Include="Lesson07\" />
+    <Folder Include="Lesson08\" />
+    <Folder Include="Lesson09\" />
+    <Folder Include="Lesson10\" />
+    <Folder Include="Lesson11\" />
+    <Folder Include="Lesson12\" />
+    <Folder Include="Lesson13\" />
+    <Folder Include="Lesson14\" />
+    <Folder Include="Lesson15\" />
+    <Folder Include="Lesson16\" />
+    <Folder Include="Lesson17\" />
+    <Folder Include="Lesson18\" />
+    <Folder Include="Lesson19\" />
+    <Folder Include="Lesson20\" />
+    <Folder Include="Lesson21\" />
+    <Folder Include="Lesson22\" />
+    <Folder Include="Lesson23\" />
+    <Folder Include="Lesson23\static\styles\" />
+    <Folder Include="Lesson23\templates\" />
+    <Folder Include="Lesson23\static\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Lesson21\.env" />
+    <Content Include="Lesson21\,gitignore" />
+    <Content Include="Lesson22\context.txt" />
+    <Content Include="Lesson22\more_names.txt" />
+    <Content Include="Lesson22\names.txt" />
+    <Content Include="Lesson23\.gitignore" />
+    <Content Include="Lesson23\.env" />
+    <Content Include="Lesson23\static\styles\style.css" />
+    <Content Include="Lesson23\templates\city-not-found.html" />
+    <Content Include="Lesson23\templates\index.html" />
+    <Content Include="Lesson23\templates\weather.html" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>
